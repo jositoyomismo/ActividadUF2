@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:contentDescription="@string/imagen_de_cielo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/cielo"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/titulo"
+        style="@style/etiquetas"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/mis_tareas"
+        android:textSize="40sp"
+
+        />
+
+    <TextView
+        android:id="@+id/subtitulo"
+        style="@style/etiquetas"
+        android:layout_below="@id/titulo"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="@string/dam" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/subtitulo"
+        android:background="@color/amarillo_palido"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+
+        >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/cajaUsuario"
+            style="@style/cajastexto"
+            android:hint="@string/usuario"
+            android:textColor="#6c3483"
+            android:textColorHint="#d35400"
+            android:textSize="20sp">
+
+            <requestFocus/>
+        </android.support.design.widget.TextInputEditText>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/cajaPassword"
+            style="@style/cajastexto"
+            android:hint="@string/pass"
+            android:textColor="@color/purpura"
+            android:textColorHint="@color/rojo"
+            android:textSize="20sp"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botonloguin"
+        style="@style/cajastexto"
+        android:layout_below="@id/linearlayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/boton"
+        android:text="@string/loguearse"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:onClick="pushbutton"
+        />
+    <TextView
+        android:id="@+id/newcount"
+        style="@style/etiquetas"
+        android:layout_below="@id/botonloguin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="@string/nuevo_usuario"
+        android:onClick="crearNotificacion"/>
+</RelativeLayout>

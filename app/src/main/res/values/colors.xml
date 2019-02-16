@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#85c1e9</color>
+    <color name="colorPrimaryDark">#2471a3</color>
+    <color name="colorAccent">#1abc9c</color>
+    <color name="rojo">#d35400</color>
+    <color name="purpura">#6c3483</color>
+    <color name="amarillo_palido">#fcf3cf</color>
+</resources>
